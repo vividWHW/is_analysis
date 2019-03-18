@@ -8,7 +8,7 @@
 流程图1：考试及成绩管理流程
 ---------
 PlantUML源码如下：
-  
+~~~sql  
 @startuml
 |教务处|
 start
@@ -49,11 +49,12 @@ fork
    end fork
 stop
 @enduml
+~~~
 
-
-    业务流程图如下：
-    ![查询1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/UML-p107-6.1.png)
-    流程说明：
+业务流程图如下：
+![查询1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/UML-p107-6.1.png)
+    
+流程说明：
 
 
 流程图2： 客户维修服务流程
