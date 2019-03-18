@@ -53,7 +53,7 @@ stop
 
 业务流程图如下：
 
-![查询1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/UML-p107-6.1.png)
+![UML1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/UML-p107-6.1.png)
    
    
 流程说明：
@@ -62,6 +62,48 @@ stop
 
 流程图2： 客户维修服务流程
 -----------
-    PlantUML源码如下：
-    业务流程图如下：
-    流程说明：
+PlantUML源码如下：
+~~~sql
+@startuml
+|客户|
+start
+:申请服务;
+|#AntiqueWhite|业务经理|
+if (你是新客户吗？) then (是)
+  :登记客户信息;
+else (不是)
+endif
+:上门勘察;
+:制定方案;
+|客户|
+if (满意吗？) then (是)
+   :签订服务合同;
+   |#AntiqueWhite|业务经理|
+   fork
+   :安排工人;
+   fork again
+   :安排材料;
+   end fork
+   :填写派工单;
+   |工人|
+   :领取材料;
+   :上门服务;
+   |客户|
+   :验收并填写反馈意见;
+   |#AntiqueWhite|业务经理|
+   :交回派工单;
+|#AntiqueWhite|财务人员|
+   :结算收款;
+   stop
+   |客户|
+else (不是)
+   stop
+@enduml
+~~~
+
+业务流程图如下：
+
+![UML2](https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/UML-p108-6.2.png)
+
+
+流程说明：
