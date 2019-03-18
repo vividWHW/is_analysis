@@ -16,7 +16,6 @@ start
 :考试安排表;
 |#AntiqueWhite|教师|
 :出卷;
--> You can put text on arrows;
 fork
 :A、B试卷;
   fork again
