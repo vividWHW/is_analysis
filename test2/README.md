@@ -52,6 +52,10 @@
     <td class="tg-0lax" colspan="2">后置条件</td>
     <td class="tg-0lax" colspan="3">存储借书记录、更新库存数量、所借图书状态为借出</td>
   </tr>
+    <tr>
+    <td class="tg-0lax" colspan="2">主事件流</td>
+    <td class="tg-0lax" colspan="3">1.图书管理员将读者借书卡提供给系统；<br>2.系统验证读者身份和借书条件<br>3.图书管理员将读者所借图书输入系统</td>
+  </tr>
 </table>
 
 “借出图书”用例流程图源码如下：
