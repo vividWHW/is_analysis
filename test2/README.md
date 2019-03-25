@@ -3,7 +3,7 @@
     
 学号|班级|姓名|我的照片
 :-:|:-:|:-:|:-:
-201610414323|软件(本)16-3|23.王涵玮|<*img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/myself.jpg" width="66"/>
+201610414323|软件(本)16-3|23.王涵玮|<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/myself.jpg" width="66"/>
 
 
 ## 1. 图书管理系统的用例关系图
@@ -24,7 +24,7 @@
 
 1.2. 用例图如下：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="220"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.puml" width="220"/>
 
 ## 2. 参与者说明：
 ---------
@@ -99,7 +99,7 @@ stop
 
 “借出图书”用例流程图：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.png" width="150"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.puml" width="150"/>
 
 3.2 “购入图书”用例
 
