@@ -6,8 +6,8 @@
 201610414323|软件(本)16-3|23.王涵玮|<*img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test1/myself.jpg" width="66"/>
 
 
-1. 图书管理系统的用例关系图
----------
+h2 1. 图书管理系统的用例关系图
+--------
 1.1 用例图PlantUML源码如下：
 ~~~sql
 ~~~
