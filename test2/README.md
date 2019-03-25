@@ -24,7 +24,7 @@
 
 1.2. 用例图如下：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.puml" width="220"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.puml"/>
 
 ## 2. 参与者说明：
 ---------
@@ -99,7 +99,7 @@ stop
 
 “借出图书”用例流程图：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.puml" width="150"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.puml"/>
 
 3.2 “购入图书”用例
 
