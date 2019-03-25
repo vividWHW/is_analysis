@@ -10,9 +10,21 @@
 --------
 1.1 用例图PlantUML源码如下：
 ~~~sql
+@startuml
+图书管理员 ---> (借出图书)
+图书管理员 ---> (归还图书)
+图书管理员 ---> (维护书目)
+图书管理员 ---> (维护读者信息)
+:读者: ---> (查询书目)
+:读者: ---> (查询借阅情况)
+:读者: ---> (预定图书)
+:读者: ---> (取消预订)
+@enduml
 ~~~
 
 1.2. 用例图如下：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="220"/>
 
 ## 2. 参与者说明：
 ---------
@@ -63,8 +75,31 @@
 </table>
 
 “借出图书”用例流程图源码如下：
+~~~sql
+@startuml
+|读者|
+start
+while (读者所借图书是否录入完毕?)is(否)
+    :读者提供借书卡;
+|#AntiqueWhite|图书管理员|
+    :将借书卡提供给系统;
+|系统|
+    :验证读者身份和借书条件;
+|#AntiqueWhite|图书管理员|
+    :所借图书输入系统;
+|系统|
+    :记录借书信息;
+    :修改图书状态和可借阅数量;
+    :累加读者借书数量;
+end while (是)
+    :打印借书清单，交易成功完成;
+stop
+@enduml
+~~~
 
 “借出图书”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.png" width="150"/>
 
 3.2 “购入图书”用例
 
