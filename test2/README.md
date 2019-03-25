@@ -68,7 +68,11 @@
     <td class="tg-0pky" colspan="2">主事件流</td>
     <td class="tg-0pky" colspan="3">1.图书管理员将读者借书卡提供给系统；<br>2.系统验证读者身份和借书条件<br>3.图书管理员将读者所借图书输入系统<br>4.系统记录借书信息，并且修改图书的状态和此种书的可借数量<br>5.系统累加读者的借书数量<br>6.重复3~5，直到图书管理员确认全部图书登记完毕<br>7.系统打印借书清单，交易成功完成</td>
   </tr>
-  <tr>
+     <tr>
+    <td class="tg-0lax" colspan="2">备选事件流</td>
+    <td class="tg-0lax" colspan="3">2a.非法读者<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.系统提示错误并拒绝接受输入<br>2b.读者借书数已经达到限额<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.系统提示并拒绝接受输入<br>5a.读者借书数已达限额<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.系统提示，并要求结束输入<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.管理员确认借书完成<br>5b.读者有该书的预定记录<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.删除该条预定信息</td>
+  </tr>
+      <tr>
     <td class="tg-0lax" colspan="2">备注</td>
     <td class="tg-0lax" colspan="3">图书馆开架借阅，读者找到书后办理借阅手续，因此借书不需要验证库存，而且每本书都是可识别的</td>
   </tr>
@@ -128,6 +132,10 @@ stop
     <td class="tg-0pky" colspan="3">1.图书管理员将图书信息提供给系统；<br>2.系统存储图书信息更新图书数量<br>3.重复1~2，直到图书管理员确认全部图书登记完毕<br>4.系统打印新增图书清单</td>
   </tr>
   <tr>
+    <td class="tg-0lax" colspan="2">备选事件流</td>
+    <td class="tg-0lax" colspan="3">1a.该图书已有<br>&nbsp;&nbsp;&nbsp;&nbsp;1.只更新库存</td>
+  </tr>
+    <tr>
     <td class="tg-0lax" colspan="2">备注</td>
     <td class="tg-0lax" colspan="3">每本新增图书都会有编号，也会更新库存数量</td>
   </tr>
