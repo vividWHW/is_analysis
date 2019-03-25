@@ -36,9 +36,9 @@
 
 主要职责是：读者可以查询到馆藏目录和本人在借的图书，对目前已借出无馆藏的图书可以进行预订，也可以取消预订。
 
-2.3 其他类型用户
+2.3 其他类型用户：系统
 
-主要职责是：
+主要职责是：记录借出归还图书信息，存储馆藏图书信息
 
 ## 3. 用例规约表
 -----------------
@@ -103,6 +103,41 @@ stop
 
 3.2 “购入图书”用例
 
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="5"></th>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">用例名称</td>
+    <td class="tg-0pky" colspan="3">购入图书</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">参与者</td>
+    <td class="tg-0pky" colspan="3">系统（主要参与者）、图书管理员（次要参与者）</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">前置条件</td>
+    <td class="tg-0pky" colspan="3">图书管理员已被识别和授权</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">后置条件</td>
+    <td class="tg-0pky" colspan="3">存储图书记录、更新库存数量</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">主事件流</td>
+    <td class="tg-0pky" colspan="3">1.图书管理员将图书信息提供给系统；<br>2.系统存储图书信息更新图书数量<br>3.重复1~2，直到图书管理员确认全部图书登记完毕<br>4.系统打印新增图书清单</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">备注</td>
+    <td class="tg-0lax" colspan="3">每本新增图书都会有编号，也会更新库存数量</td>
+  </tr>
+</table>
+
 “购入图书”用例流程图源码如下：
+~~~sql
+
+~~~
 
 “购入图书”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1-1.png" width="500"/>
