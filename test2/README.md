@@ -31,8 +31,35 @@
 ## 3. 用例规约表
 -----------------
 3.1 “借出图书”用例
+
+<table class="tg">
+  <tr>
+    <th class="tg-0lax" colspan="5"></th>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">用例名称</td>
+    <td class="tg-0pky" colspan="3">借出图书</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">参与者</td>
+    <td class="tg-0lax" colspan="3">图书管理员（主要参与者）、读者（次要参与者）</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">前置条件</td>
+    <td class="tg-0lax" colspan="3">图书管理员已被识别和授权</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">后置条件</td>
+    <td class="tg-0lax" colspan="3">存储借书记录、更新库存数量、所借图书状态为借出</td>
+  </tr>
+</table>
+
 “借出图书”用例流程图源码如下：
+
 “借出图书”用例流程图：
+
 3.2 “购入图书”用例
+
 “购入图书”用例流程图源码如下：
+
 “购入图书”用例流程图：
