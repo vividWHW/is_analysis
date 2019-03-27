@@ -28,7 +28,7 @@
 
 #### 1.2. 用例图如下：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="860"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="960"/>
 
 
 
