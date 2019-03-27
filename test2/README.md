@@ -38,8 +38,8 @@
 
 #### 1.2. 用例图如下：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="460"/>
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.1.png" width="460"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="666"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.1.png" width="666"/>
 
 
 ## 2. 参与者说明：
