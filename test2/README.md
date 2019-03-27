@@ -25,11 +25,21 @@
 :读者: ---> (归还借阅图书)
 @enduml
 ~~~
+~~~sql
+@startuml
+:读者: ---> (查询书目)
+:读者: ---> (查询借阅情况)
+:读者: ---> (预定图书)
+:读者: ---> (取消预订)
+:读者: ---> (借阅图书)
+:读者: ---> (归还借阅图书)
+@enduml
+~~~
 
 #### 1.2. 用例图如下：
 
-<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="960"/>
-
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.png" width="460"/>
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML3.1.png" width="460"/>
 
 
 ## 2. 参与者说明：
