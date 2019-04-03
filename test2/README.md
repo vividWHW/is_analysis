@@ -232,8 +232,62 @@ stop
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.3.png" width="500"/>
 
 #### 3.4 “维护读者信息”用例
-用例表
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="5">1</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">用例名称</td>
+    <td class="tg-0pky" colspan="3">维护读者信息</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">参与者</td>
+    <td class="tg-0pky" colspan="3">图书管理员（主要参与者）、系统（次要参与者）、读者（次要参与者）</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">前置条件</td>
+    <td class="tg-0pky" colspan="3">图书管理员已被识别和授权</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">后置条件</td>
+    <td class="tg-0pky" colspan="3">核对图书库存数量</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">主事件流</td>
+    <td class="tg-0pky" colspan="3">1.读者提供信息<br>2.管理员将信息录入系统<br>3.系统将信息储存<br>4.管理里员发给读者借书卡</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">备选事件流</td>
+    <td class="tg-0pky" colspan="3">2a.系统中已有该读者的信息<br>     1.拒绝办理办理借书卡，并提示已有借书卡<br><br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">备注</td>
+    <td class="tg-0pky" colspan="3">无</td>
+  </tr>
+</table>
+
 ###### “维护读者信息”用例流程图源码如下：
+~~~sql
+@startuml
+|读者|
+start
+:提供信息;
+|#AntiqueWhite|管理员|
+:将信息录入系统;
+|系统|
+if (是否已有该读者？) then (是)
+     :拒绝办理办理借书卡;
+     :提示已有借书卡;
+     detach
+     else(否)
+   endif
+:储存信息;
+|#AntiqueWhite|管理员|
+:发放借书卡;
+stop
+@enduml
+~~~
 ###### “维护读者信息”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.4.png" width="500"/>
