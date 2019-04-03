@@ -277,9 +277,9 @@ start
 :将信息录入系统;
 |系统|
 if (是否已有该读者？) then (是)
-     :拒绝办理办理借书卡;
+     :拒绝办理借书卡;
      :提示已有借书卡;
-     detach
+     stop
      else(否)
    endif
 :储存信息;
@@ -293,8 +293,62 @@ stop
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.4.png" width="500"/>
 
 #### 3.5 “归还图书”用例
-用例表
+<table>
+  <tr>
+    <th colspan="5">1</th>
+  </tr>
+  <tr>
+    <td colspan="2">用例名称</td>
+    <td colspan="3">归还图书</td>
+  </tr>
+  <tr>
+    <td colspan="2">参与者</td>
+    <td colspan="3">图书管理员（主要参与者）、系统（次要参与者）、读者（次要参与者）</td>
+  </tr>
+  <tr>
+    <td colspan="2">前置条件</td>
+    <td colspan="3">图书管理员已被识别和授权</td>
+  </tr>
+  <tr>
+    <td colspan="2">后置条件</td>
+    <td colspan="3">核对图书库存数量</td>
+  </tr>
+  <tr>
+    <td colspan="2">主事件流</td>
+    <td colspan="3">1.读者提供图书和借书卡<br>2.管理员将信息录入系统<br>3.系统通过借书卡查询用户借书记录<br>4.系统将图书和记录对比<br>5.系统更改图书库存并更改读者该条借书记录状态<br>6.打印还书单据</td>
+  </tr>
+  <tr>
+    <td colspan="2">备选事件流</td>
+    <td colspan="3">4a.系统将图书和记录对比后发现没有该纪录<br>     1.拒绝办理归还图书，并提示信息<br></td>
+  </tr>
+  <tr>
+    <td colspan="2">备注</td>
+    <td colspan="3">无</td>
+  </tr>
+</table>
 ###### “归还图书”用例流程图源码如下：
+~~~sql
+@startuml
+|读者|
+start
+:提供图书和借书卡;
+|#AntiqueWhite|管理员|
+:将信息录入系统;
+|系统|
+:查询用户借书记录;
+:对比图书和记录;
+if (是否有该纪录？) then (否)
+     :拒绝办理归还;
+     :提示未借此书;
+     stop
+     else(是)
+   endif
+:更改图书库存;
+:更改读者该条借书记录状态;
+:打印还书单据;
+stop
+@enduml
+~~~
 ###### “归还图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.5.png" width="500"/>
