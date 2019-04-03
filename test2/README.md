@@ -170,3 +170,77 @@ stop
 ###### “购入图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1-1.png" width="500"/>
+
+#### 3.3 “维护书目”用例
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="5">1</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">用例名称</td>
+    <td class="tg-0pky" colspan="3">维护书目</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">参与者</td>
+    <td class="tg-0pky" colspan="3">图书管理员（主要参与者）、系统（次要参与者）</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">前置条件</td>
+    <td class="tg-0pky" colspan="3">图书管理员已被识别和授权</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">后置条件</td>
+    <td class="tg-0pky" colspan="3">核对图书库存数量</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">主事件流</td>
+    <td class="tg-0pky" colspan="3">1.图书管理员统计馆藏<br>2.图书管理员将图书信息提供给系统<br>3.系统将新的信息与数据库中的记录对比<br>4.重复1~3，直到图书管理员确认全部图书核对完毕<br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">备选事件流</td>
+    <td class="tg-0pky" colspan="3">3a.与记录不一致<br>     1.系统更新记录并记录这次更改<br><br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">备注</td>
+    <td class="tg-0pky" colspan="3">统计馆藏由管理员进行</td>
+  </tr>
+</table>
+
+###### “维护书目”用例流程图源码如下：
+~~~sql
+@startuml
+|管理员|
+start
+while (图书是否核对完毕?)is(否)
+:统计馆藏;
+:统计信息输入系统;
+|#AntiqueWhite|系统|
+:与数据库中的记录对比;
+if (是否一致？) then (否)
+     :更新记录并记录这次更改;
+     detach
+     else(是)
+   endif
+   |管理员|
+end while (是)
+stop
+@enduml
+~~~
+###### “维护书目”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.3.png" width="500"/>
+
+#### 3.4 “维护读者信息”用例
+用例表
+###### “维护读者信息”用例流程图源码如下：
+###### “维护读者信息”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.4.png" width="500"/>
+
+#### 3.5 “归还图书”用例
+用例表
+###### “归还图书”用例流程图源码如下：
+###### “归还图书”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.5.png" width="500"/>
