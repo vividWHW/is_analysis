@@ -52,7 +52,7 @@
 
 ## 3. 用例规约表
 
-#### 3.1 “借出图书”用例
+### 3.1 “借出图书”用例
 
 <table class="tg">
   <tr>
@@ -88,7 +88,7 @@
   </tr>
 </table>
 
-###### “借出图书”用例流程图源码如下：
+##### “借出图书”用例流程图源码如下：
 ~~~sql
 @startuml
 |读者|
@@ -111,11 +111,11 @@ stop
 @enduml
 ~~~
 
-###### “借出图书”用例流程图：
+##### “借出图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1.png" width="530"/>
 
-#### 3.2 “购入图书”用例
+### 3.2 “购入图书”用例
 
 <table class="tg">
   <tr>
@@ -151,7 +151,7 @@ stop
   </tr>
 </table>
 
-###### “购入图书”用例流程图源码如下：
+##### “购入图书”用例流程图源码如下：
 ~~~sql
 @startuml
 |图书管理员|
@@ -167,11 +167,11 @@ stop
 @enduml
 ~~~
 
-###### “购入图书”用例流程图：
+##### “购入图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/UML-p145-7.1-1.png" width="500"/>
 
-#### 3.3 “维护书目”用例
+### 3.3 “维护书目”用例
 
 <table class="tg">
   <tr>
@@ -207,7 +207,7 @@ stop
   </tr>
 </table>
 
-###### “维护书目”用例流程图源码如下：
+##### “维护书目”用例流程图源码如下：
 ~~~sql
 @startuml
 |管理员|
@@ -227,11 +227,11 @@ end while (是)
 stop
 @enduml
 ~~~
-###### “维护书目”用例流程图：
+##### “维护书目”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.3.png" width="500"/>
 
-#### 3.4 “维护读者信息”用例
+### 3.4 “维护读者信息”用例
 
 <table class="tg">
   <tr>
@@ -267,7 +267,7 @@ stop
   </tr>
 </table>
 
-###### “维护读者信息”用例流程图源码如下：
+##### “维护读者信息”用例流程图源码如下：
 ~~~sql
 @startuml
 |读者|
@@ -288,11 +288,11 @@ if (是否已有该读者？) then (是)
 stop
 @enduml
 ~~~
-###### “维护读者信息”用例流程图：
+##### “维护读者信息”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.4.png" width="500"/>
 
-#### 3.5 “归还图书”用例
+### 3.5 “归还图书”用例
 <table>
   <tr>
     <th colspan="5">1</th>
@@ -326,7 +326,8 @@ stop
     <td colspan="3">无</td>
   </tr>
 </table>
-###### “归还图书”用例流程图源码如下：
+
+##### “归还图书”用例流程图源码如下：
 ~~~sql
 @startuml
 |读者|
@@ -349,6 +350,6 @@ if (是否有该纪录？) then (否)
 stop
 @enduml
 ~~~
-###### “归还图书”用例流程图：
+##### “归还图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.5.png" width="500"/>
