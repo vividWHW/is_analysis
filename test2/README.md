@@ -353,3 +353,81 @@ stop
 ##### “归还图书”用例流程图：
 
 <img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.5.png" width="500"/>
+
+### 3.6 “查询书目”用例
+
+<table>
+  <tr>
+    <th colspan="5">1</th>
+  </tr>
+  <tr>
+    <td colspan="2">用例名称</td>
+    <td colspan="3">查询书目</td>
+  </tr>
+  <tr>
+    <td colspan="2">参与者</td>
+    <td colspan="3">读者（主要参与者）、系统（次要参与者）</td>
+  </tr>
+  <tr>
+    <td colspan="2">前置条件</td>
+    <td colspan="3">读者已经通过借书卡验证身份</td>
+  </tr>
+  <tr>
+    <td colspan="2">后置条件</td>
+    <td colspan="3">无</td>
+  </tr>
+  <tr>
+    <td colspan="2">主事件流</td>
+    <td colspan="3">1.读者登录到图书管理系统<br>2.读者输入想要查找的书名或编号<br>3.系统根据读者输入在数据库中查找<br>4.显示相应信息<br>5.重复1~4直到读者退出查询书目界面</td>
+  </tr>
+  <tr>
+    <td colspan="2">备选事件流</td>
+    <td colspan="3">4a.系统发现没有该图书<br>     1.提示信息<br></td>
+  </tr>
+  <tr>
+    <td colspan="2">备注</td>
+    <td colspan="3">查询书目需要读者登录到图书管理系统</td>
+  </tr>
+</table>
+
+##### “查询书目”用例流程图源码如下：
+
+~~~sql
+@startuml
+|读者|
+start
+while (是否查询完毕?)is(否)
+:登录到图书管理系统;
+:输入想要查找的书名或编号;
+|#AntiqueWhite|系统|
+:根据读者输入在数据库中查找;
+if (是否有相关图书信息？) then (是)
+     :显示相应信息;
+     else(否)
+     :提示没有相关图书;
+   endif
+end while (是)
+|读者|
+:退出查询书目界面;
+stop
+@enduml
+~~~
+
+##### “查询书目”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.6.png" width="500"/>
+
+
+### 3.7 “查询借阅情况”用例
+
+##### “查询借阅情况”用例流程图源码如下：
+
+~~~sql
+
+~~~
+
+##### “查询借阅情况”用例流程图：
+
+<img src="https://github.com/WangHanWei19971211/is_analysis/blob/master/test2/uml2-3.7.png" width="500"/>
+
+
