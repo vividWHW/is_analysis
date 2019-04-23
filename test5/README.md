@@ -102,7 +102,7 @@
 #### 2.1. 借书界面设计
 <a href="https://wanghanwei19971211.github.io/is_analysis_pages/book/index.html" target="_blank">借书界面 is_analysis_pages</a>
 
-![借书界面](https://github.com/WangHanWei19971211/is_analysis/blob/master/test5/book.png)
+![借书界面](https://github.com/WangHanWei19971211/is_analysis/blob/master/test5/book.jpg)
 
 用例图参见：<a href="https://github.com/WangHanWei19971211/is_analysis/tree/master/test2" target="_blank">实验二 用例图</a>
 
