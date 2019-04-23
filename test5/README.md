@@ -123,21 +123,16 @@
   |  access_roken| 是 | 用于验证请求合法性的认证信息   |
   |  access_token| 是 |    用于验证请求合法性的认证信息。   |
   | userName| 否 |    读者用户名   |  
+  | method| 是 |    固定为 “GET”   |
   返回示例：
   ```
   {
-      "data": [
-          {
-              "uid": "14361",
-              "title": "Lv3 转正",
-              "nickname": "O记_Mega可达鸭",
-              "signature": "呀  一不小心就进化了",
-              "score1": "322",  
-              "real_nickname": "O记_Mega可达鸭",
-              "avatar128": "http://upload.opensns.cn/Uploads_Avatar_14361_58e4b58fccf81.jpg?imageMogr2/crop/!260x260a6a22/thumbnail/128x128!",
-              "avatar512": "http://upload.opensns.cn/Uploads_Avatar_14361_58e4b58fccf81.jpg?imageMogr2/crop/!260x260a6a22/thumbnail/512x512!"
-          }
-      ],
+      "idNumber": "510603199912126666",
+      "limitationOfBooks": "10",
+      "borrowedBook": "3",
+      "limitationOfDisc": "10",
+      "borrowedDisc": "0",  
+      "sex": "女",
       "code": 200
   }
   ```
@@ -146,27 +141,13 @@
  
  |     参数名称  |  说明	|
  |:--------:|:-------:|
- | libraryCardNumber| 读者的借书卡号 |
+ | idNumber| 身份证号 |
+ | limitationOfBooks| 图书限额 |
+ | borrowedBook| 已借图书数 |
+ | limitationOfDisc| 碟片限额 |
+ | borrowedDisc| 已借碟片数 |
+  | sex| 性别 |
  |  code| 返回码 | 
-
-  
-  Uid：用户uid：
-  
-  Title：用户等级；
-  
-  Nickname：用户昵称；
-  
-  Signature：个性签名
-  
-  Scorel；用户积分
-  
-  Avatar128/520:用户头像；
-  
-  Code
-  
-  返回码
-  
-
 
 2、验证资源是否存在
 
@@ -193,6 +174,38 @@
 |     参数名称  |  说明	|
 |:--------:|:-------:|
 | info| 返回的提示信息 |
+|  code| 返回码 |
+
+3、借阅资源
+
+请求方法：POST
+
+请求参数：
+
+|        参数名称       |      必填	     | 说明 |
+|:-----------------:|:-------------:|:----------:|
+|  resourceName | 是 |    资源名   |
+  |  libraryCardNumber| 是 | 读者的借书卡号   |
+|  action| 是 |    固定为 “checkResourceName”   |
+|  access_token| 是 |    用于验证请求合法性的认证信息。   |
+| method| 是 |    固定为 “GET”   |
+
+返回示例：
+```
+{
+    "borrowId":"abcdef123456789",
+    "borrowDate":"2019-04-01",
+    "returnDate":"2019-05-01",
+    "code":200
+}
+```
+返回参数说明：
+
+|     参数名称  |  说明	|
+|:--------:|:-------:|
+| borrowId| 借书记录号 |
+| borrowDate| 借书日期 |
+| returnDate| 应还日期 |
 |  code| 返回码 |
 
 
