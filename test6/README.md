@@ -205,7 +205,7 @@
     <td>网站正确与否汇总</td>
   </tr>
   
-  #### 5.4. tests表
+#### 5.4. tests表
   <table>
     <tr>
       <th>字段</th>
@@ -231,7 +231,7 @@
       <td>外键</td>
       <td>否</td>
       <td>null</td>
-      <td></td>
+      <td>无重复</td>
       <td>所属课程编号</td>
     </tr>
     <tr>
@@ -245,7 +245,7 @@
     </tr>
   </table>
   
- ####5.5. course表
+####5.5. course表
  <table>
    <tr>
      <th>字段</th>
@@ -276,7 +276,7 @@
    </tr>
  </table> 
   
- ####5.6. teachers表
+####5.6. teachers表
 <table>
   <tr>
     <th>字段</th>
