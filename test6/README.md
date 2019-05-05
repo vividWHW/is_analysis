@@ -14,7 +14,7 @@
 ## 2. 系统总体结构
 ![UML1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/test6.png)
 
-## 3. 用例图设计 <a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/uml3.all.puml" target="_blank">源码</a>
+## 3. 用例图设计 <a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/src/uml3.all.puml" target="_blank">源码</a>
 ![UML1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/uml3.all.png)
 
 
