@@ -204,6 +204,7 @@
     <td></td>
     <td>网站正确与否汇总</td>
   </tr>
+</table>
   
 #### 5.4. tests表
   <table>
