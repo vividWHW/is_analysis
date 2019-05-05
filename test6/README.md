@@ -17,4 +17,7 @@
 ## 3. 用例图设计 <a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/src/uml3.all.puml" target="_blank">源码</a>
 ![UML1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/uml3.all.png)
 
+## 4. 类图设计 <a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/src/uml4.puml" target="_blank">源码</a>
+![UML1](https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/uml4.png)
 
+## 5. 数据库设计 
