@@ -246,7 +246,7 @@
     </tr>
   </table>
   
-####5.5. course表
+#### 5.5. course表
  <table>
    <tr>
      <th>字段</th>
@@ -277,7 +277,7 @@
    </tr>
  </table> 
   
-####5.6. teachers表
+#### 5.6. teachers表
 <table>
   <tr>
     <th>字段</th>
