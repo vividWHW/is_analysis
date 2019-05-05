@@ -7,8 +7,8 @@ users <|-- teachers
 users <|-- students
 
 package 用户用例集 {
-users --up-> (登录)
 users --up-> (登入)
+users --up-> (登出)
 users --up-> (管理用户信息)
 users --up-> (课程选择)
 }
