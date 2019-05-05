@@ -1,0 +1,19 @@
+@startuml
+title 基于GitHub的实验管理平台--选择课程用例的顺序图
+actor users
+alt 如果users已登入且是student
+    users -> course: 查看所有课程列表
+	course -> tests:查看该门课程的实验
+	tests --> users:每门课程的信息
+    users -> course: 选中需要加入的课程
+    course -> course:更新课程学生名单
+    course -> users: 提示选课成功
+else 如果users已登入且是teacher
+    users -> course: 查看所有课程列表
+	course -> tests:查看该门课程的实验
+	tests --> users:每门课程的信息
+else 如果是未登录状态
+    users ->x course: 查看所有课程列表
+end
+
+@enduml

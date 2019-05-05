@@ -1,0 +1,21 @@
+@startuml
+title 基于GitHub的实验管理平台--课程信息管理用例的顺序图
+actor users
+users -> course: 查看所有课程列表
+course -> tests:查看该门课程的实验
+tests --> users:每门课程的信息
+opt 选择修改课程
+    users -> course:修改课程信息
+    tests --> users: 返回修改成功信息
+else 选择新增课程
+    users -> course:新增课程信息
+    course -> tests:新增该门课程的实验
+    tests --> users: 返回添加成功信息
+else 选择删除课程
+    users -> course:删除课程信息
+    course -> tests:删除该门课程的实验
+    tests -> grades:删除该门课程的成绩
+    grades --> users: 返回删除成功信息
+end
+
+@enduml

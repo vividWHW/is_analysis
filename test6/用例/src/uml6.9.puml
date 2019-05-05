@@ -1,0 +1,12 @@
+@startuml
+title 基于GitHub的实验管理平台--登入用例的顺序图
+actor users
+alt 选择用户类型为老师
+    users -> teachers:查看用户名和密码是否符合
+    teachers --> users: 返回登入成功信息
+else 选择用户类型为学生
+    users -> students:查看用户名和密码是否符合
+    students --> users: 返回登入成功信息
+end
+
+@enduml

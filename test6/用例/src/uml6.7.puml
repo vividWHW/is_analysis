@@ -1,0 +1,14 @@
+@startuml
+title 基于GitHub的实验管理平台--用户信息管理用例的顺序图
+actor users
+    users -> students: 查看学生信息
+    students --> users:学生信息
+opt 选择修改GitHub用户名称
+    users -> students:修改GitHub用户名称
+    students --> users: 返回修改成功信息
+else 选择修改密码
+    users -> students:修改密码
+    students --> users: 返回修改成功信息
+end
+
+@enduml
