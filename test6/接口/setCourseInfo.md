@@ -1,7 +1,7 @@
 ﻿<!-- markdownlint-disable MD033-->
 <!-- 禁止MD033类型的警告 https://www.npmjs.com/package/markdownlint -->
 
-# 接口：setUserInfo  
+# 接口：setCourseInfo 
 
 - 功能：
     管理课程信息。
@@ -32,7 +32,7 @@
         {         
             "status": true,
             "course_name":"信息系统分析", 
-            "test_id":"1", 
+            "test_id":"1"
         }
  
 - 返回参数说明：    
