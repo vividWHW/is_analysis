@@ -1,8 +1,7 @@
 ﻿<!-- markdownlint-disable MD033-->
 <!-- 禁止MD033类型的警告 https://www.npmjs.com/package/markdownlint -->
 
-# 接口：getOneStudentResults  [返回](../README.md)
-用例： [查看成绩](../用例/查看成绩.md)，[评定成绩](../用例/评定成绩.md)
+# 接口：getOneStudentResults 
 
 - 功能：
     返回一个学生的所有实验成绩和实验评价。
