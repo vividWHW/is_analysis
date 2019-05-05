@@ -308,3 +308,23 @@
   </tr>
 </table>
 
+
+## 6. 用例及界面详细设计
+* 6.1.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.1.md">“学生列表”用例</a>
+，<a href="">界面</a>
+* 6.2.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.2.md">“评定成绩”用例</a>
+，<a href="">界面</a>
+* 6.3.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.3.md">“查看成绩”用例</a>
+，<a href="">界面</a>
+* 6.4.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.4.md">“课程列表”用例</a>
+，<a href="">界面</a>
+* 6.5.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.5.md">“选择课程”用例</a>
+，<a href="">界面</a>
+* 6.6.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.6.md">“课程信息管理”用例</a>
+，<a href="">界面</a>
+* 6.7.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.7.md">“用户信息管理”用例</a>
+，<a href="">界面</a>
+* 6.8.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.8.md">“登入”用例</a>
+，<a href="">界面</a>
+* 6.9.<a href="https://github.com/WangHanWei19971211/is_analysis/blob/master/test6/用例/6.9.md">“登出”用例</a>
+，<a href="">界面</a>
