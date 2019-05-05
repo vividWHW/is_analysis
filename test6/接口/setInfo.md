@@ -10,7 +10,7 @@
     学生/老师：管理信息，必须先登录。    
     
 - API请求地址： 
-    接口基本地址/v1/api/setPassword
+    接口基本地址/v1/api/setInfo
 
 - 请求方式 ：
     POST
